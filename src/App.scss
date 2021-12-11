@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  padding: .5em 1em;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.export {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin: 1em auto;
+  width: 680px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.table_header {
+  display: grid;
+  grid-template-columns: 50px 150px 100px 120px 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 680px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  p {
+    padding: 0px 5px;
+    font-weight: bold;
+  }
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+  grid-gap: 1em;
+  // justify-content: space-between;
+  margin: 0 auto;
+  width: 680px;
+  padding: 5px 1em;
+  border: 1px solid #ccc;
+  input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+  }
+}
+
+.student {
+  display: grid;
+  grid-template-columns: 50px 150px 100px 120px 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 680px;
+  p {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 5px;
+    }
+  input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    &:focus {
+      border: 1px solid #ccc;
+      outline: none;
+      }
+    
+  }
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  padding: 5px 1em;
+  cursor: pointer;
+  border: 1px solid;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &.primary {
+    background-color: green;
+    border: 1px solid green;
+    color: #fff;
+  }
+  &.secondary {
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    color: #fff;
+  }
+  &.danger {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: #fff;
+  }
+}

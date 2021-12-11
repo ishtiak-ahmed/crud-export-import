@@ -1,0 +1,9 @@
+{
+  "Students": [
+  {"id": 1,"name": "John", "grade": 10, "shift": "second" },
+  {"id": 2,"name": "Jane", "grade": 8, "shift": "second" },
+  {"id": 3, "name": "James", "grade": 9, "shift": "first" },
+  {"id": 4, "name": "Hermione", "grade": 10, "shift": "first" },
+  {"id": 5, "name": "Georgina", "grade": 6, "shift": "second" }
+  ]
+}

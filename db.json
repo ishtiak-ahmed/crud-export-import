@@ -1,0 +1,40 @@
+{
+  "Students": [
+    {
+      "id": 3,
+      "name": "James",
+      "grade": "9",
+      "shift": "first"
+    },
+    {
+      "id": 4,
+      "name": "Hermione",
+      "grade": "10",
+      "shift": "first"
+    },
+    {
+      "id": 5,
+      "name": "Georgina",
+      "grade": "6",
+      "shift": "second"
+    },
+    {
+      "id": 8,
+      "name": "Hadiul",
+      "grade": "7",
+      "shift": "noon"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "grade": "10",
+      "shift": "second"
+    },
+    {
+      "id": 9,
+      "name": "John doe",
+      "grade": "5",
+      "shift": "first"
+    }
+  ]
+}

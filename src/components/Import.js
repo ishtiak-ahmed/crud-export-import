@@ -52,9 +52,14 @@ export const Import = () => {
       Papa.parse(file, {
         complete: function (results) {
           let data = [];
-          results.data.filter((row, i) => {
+          results.data.forEach((row, i) => {
             if (i > 0) {
-              data.push({ [results.data[0][0]]: row[0], [results.data[0][1]]: row[1], [results.data[0][2]]: row[2], [results.data[0][3]]: row[3] })
+              data.push({
+                [results.data[0][0]]: row[0], [results.data[0][1]]: row[1],
+                [results.data[0][2]]: row[2], [results.data[0][3]]: row[3],
+                [results.data[0][4]]: row[4], [results.data[0][5]]: row[5],
+                [results.data[0][6]]: row[6],
+              })
             }
           })
           addToDb(data)

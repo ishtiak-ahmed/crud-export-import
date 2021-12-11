@@ -10,8 +10,11 @@ export const Students = () => {
       <div className='table_header'>
         <p>ID</p>
         <p>Name</p>
-        <p>Grade</p>
-        <p>Shift</p>
+        <p>Age</p>
+        <p>Class</p>
+        <p>Status</p>
+        <p>Created At</p>
+        <p>Updated At</p>
         <p>Action</p>
       </div>
       {

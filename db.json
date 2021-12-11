@@ -1,40 +1,40 @@
 {
   "Students": [
     {
-      "id": 3,
-      "name": "James",
-      "grade": "9",
-      "shift": "first"
-    },
-    {
-      "id": 4,
-      "name": "Hermione",
-      "grade": "10",
-      "shift": "first"
-    },
-    {
-      "id": 5,
-      "name": "Georgina",
-      "grade": "6",
-      "shift": "second"
-    },
-    {
-      "id": 8,
-      "name": "Hadiul",
-      "grade": "7",
-      "shift": "noon"
+      "id": 1,
+      "name": "Mehedi",
+      "age": "24",
+      "class": "15",
+      "status": "Passed",
+      "createdAt": "2021-12-11T16:01:23.923Z",
+      "updatedAt": "2021-12-11T16:05:10.741Z"
     },
     {
       "id": 2,
-      "name": "Jane Doe",
-      "grade": "10",
-      "shift": "second"
+      "name": "Jane Weasley",
+      "age": "20",
+      "class": "13",
+      "status": "Current",
+      "createdAt": "2021-12-11T16:02:26.024Z",
+      "updatedAt": "2021-12-11T16:05:46.624Z"
     },
     {
-      "id": 9,
-      "name": "John doe",
-      "grade": "5",
-      "shift": "first"
+      "id": 3,
+      "name": "John Doe",
+      "age": "22",
+      "class": "14",
+      "status": "Expelled",
+      "createdAt": "2021-12-11T16:02:39.103Z",
+      "updatedAt": "2021-12-11T16:05:28.811Z"
+    },
+    {
+      "id": 4,
+      "name": "Hermione Granger",
+      "age": "22",
+      "class": "15",
+      "status": "Current",
+      "createdAt": "2021-12-11T16:06:08.409Z",
+      "updatedAt": ""
     }
   ]
 }

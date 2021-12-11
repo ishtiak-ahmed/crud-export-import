@@ -1,15 +1,14 @@
 import axios from 'axios'
 import React, { useContext } from 'react'
 import { ModifyContext } from '../App'
+import moment from 'moment'
 
 export const StudentItem = ({ item }) => {
   const [editing, setEditing] = React.useState(false)
   const [newData, setNewData] = React.useState({ ...item })
   const [modify, setModify] = useContext(ModifyContext)
   const updateStudent = () => {
-    // console.log('updateStudent', newData)
-    // const data = { id: item.id, name: 'Ishtiak', grade: '15', shift: 'first' }
-    axios.put(`http://localhost:3001/students/${item.id}`, newData).then(res => {
+    axios.put(`http://localhost:3001/students/${item.id}`, { ...newData, updatedAt: new Date() }).then(res => {
       setModify(modify + 1)
       setEditing(false)
     })
@@ -27,6 +26,8 @@ export const StudentItem = ({ item }) => {
     setNewData(data)
   }
 
+  // console.log(momento())
+
   return (
     <div className='student'>
       <p><strong>{item.id} {!editing}</strong></p>
@@ -38,15 +39,31 @@ export const StudentItem = ({ item }) => {
       </p>
       <p>
         {
-          !editing ? item.grade :
-            <input type="text" defaultValue={item.grade} name='grade' onChange={handleChange} />
+          !editing ? item.age :
+            <input type="number" defaultValue={item.age} name='age' onChange={handleChange} />
         }
       </p>
       <p>
         {
-          !editing ? item.shift :
-            <input type="text" defaultValue={item.shift} name='shift' onChange={handleChange} />
+          !editing ? item.class :
+            <input type="number" defaultValue={item.class} name='class' onChange={handleChange} />
         }
+      </p>
+      <p>
+        {
+          !editing ? item.status :
+            <select name="status" onChange={handleChange} defaultValue={item.status}>
+              <option value="Current">Current</option>
+              <option value="Expelled">Expelled</option>
+              <option value="Passed">Passed</option>
+            </select>
+        }
+      </p>
+      <p>
+        {moment(item.createdAt).format('hh:mm A, DD-MM-YY')}
+      </p>
+      <p>
+        {item.updatedAt ? moment(item.updatedAt).format('hh:mm A, DD-MM-YY') : ''}
       </p>
       <p>
         {editing ?

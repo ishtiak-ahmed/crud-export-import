@@ -8,8 +8,11 @@ export const Export = () => {
   const headers = [
     { label: "id", key: "id" },
     { label: "name", key: "name" },
-    { label: "grade", key: "grade" },
-    { label: "shift", key: "shift" },
+    { label: "age", key: "age" },
+    { label: "class", key: "class" },
+    { label: "status", key: "status" },
+    { label: "createdAt", key: "createdAt" },
+    { label: "updatedAt", key: "updatedAt" },
   ];
   const csvReport = {
     headers,

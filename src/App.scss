@@ -19,17 +19,18 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
   margin: 1em auto;
-  width: 680px;
+  width: 860px;
   padding: 5px;
   border: 1px solid #ccc;
 }
 
 .table_header {
   display: grid;
-  grid-template-columns: 50px 150px 100px 120px 200px;
+  // grid-template-columns: 50px 150px 100px 120px 200px;
+  grid-template-columns: 30px 120px 70px 70px 100px 120px 120px 200px;
   justify-content: space-between;
   margin: 0 auto;
-  width: 680px;
+  width: 860px;
   padding: 5px;
   border: 1px solid #ccc;
   p {
@@ -43,7 +44,7 @@
   grid-gap: 1em;
   // justify-content: space-between;
   margin: 0 auto;
-  width: 680px;
+  width: 860px;
   padding: 5px 1em;
   border: 1px solid #ccc;
   input {
@@ -55,10 +56,10 @@
 
 .student {
   display: grid;
-  grid-template-columns: 50px 150px 100px 120px 200px;
+  grid-template-columns: 30px 120px 70px 70px 100px 120px 120px 200px;
   justify-content: space-between;
   margin: 0 auto;
-  width: 680px;
+  width: 860px;
   p {
     display: grid;
     width: 100%;
